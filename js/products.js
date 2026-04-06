@@ -34,5 +34,9 @@ var products = [
 ]
 
 function getProduct(id) {
-    for (let index = 0; index < products.length; i++)
+    for (let i = 0; i < products.length; i++) {
+        if (products[i].id === id) return products[i];
+    }
+
+    return null;
 }
