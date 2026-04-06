@@ -31,6 +31,38 @@ var products = [
         emoji: "👠",
         desc: "tovar description 4"
     },
+    {
+        id: 5,
+        name: "tovar 5",
+        category: "category 5",
+        price: 1000,
+        emoji: "🧥",
+        desc: "tovar description 5"
+    },
+    {
+        id: 6,
+        name: "tovar 6",
+        category: "category 6",
+        price: 1000,
+        emoji: "🧤",
+        desc: "tovar description 6"
+    },
+    {
+        id: 7,
+        name: "tovar 7",
+        category: "category 7",
+        price: 1000,
+        emoji: "👖",
+        desc: "tovar description 7"
+    },
+    {
+        id: 8,
+        name: "tovar 8",
+        category: "category 8",
+        price: 1000,
+        emoji: "🧣",
+        desc: "tovar description 8"
+    },
 ]
 
 function getProduct(id) {
