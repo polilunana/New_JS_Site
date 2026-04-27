@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ShopUA - Каталог</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="header-inner">
@@ -15,7 +16,7 @@
                 <a class="nav-btn active" href="index.html">Головна</a>
                 <a class="nav-btn" href="catalog.html">Каталог</a>
                 <a class="nav-btn" href="about.html">Про нас</a>
-                <a class="cart-btn" href="cart.html">
+                <a class="nav-btn" href="cart.html">
                     Кошик <span class="cart-count" id="cart-count">0</span>
                 </a>
             </nav>
@@ -24,13 +25,13 @@
 
     <main>
         <div class="section">
-           <div class="section-title">Каталог товарів</div>
-           <div class="categories" id="categories"></div>
-           <div class="products-grid" id="catalog-grid"></div>
+            <div class="section-title">Каталог товарів</div>
+            <div class="categories" id="categories"></div>
+            <div class="products-grid" id="catalog-grid"></div>
         </div>
     </main>
 
-    <footer>ShopUA - супір пупіііііііір!1!11!!</footer>
+    <footer>ShopUA - Супер пупер!</footer>
 
     <div class="toast" id="toast"></div>
 
@@ -42,7 +43,7 @@
 
         function renderCategories() {
             let container = document.getElementById("categories");
-            container.innerHTML = " ";
+            container.innerHTML = "";
 
             let cats = ["Усі"];
             for (let i = 0; i < products.length; i++) {
@@ -52,13 +53,23 @@
             }
 
             for (let j = 0; j < cats.length; j++) {
-
+                var btn = document.createElement("button");
+                btn.className = "cat-btn" + (cats[j] === activeCategory ? " active" : "");
+                btn.textContent = cats[j];
+                btn.onclick = (function (c) {
+                    return function () {
+                        activeCategory = c;
+                        renderCategories();
+                        renderGrid();
+                    };
+                })(cats[j]);
+                container.appendChild(btn);
             }
         }
 
         function renderGrid() {
             let container = document.getElementById("catalog-grid");
-            container.innerHTML = " ";
+            container.innerHTML = "";
 
             for (let i = 0; i < products.length; i++) {
                 if (activeCategory === "Усі" || products[i].category === activeCategory) {
@@ -71,4 +82,5 @@
         renderGrid();
     </script>
 </body>
+
 </html>
