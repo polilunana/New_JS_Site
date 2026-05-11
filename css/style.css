@@ -1,9 +1,9 @@
 :root {
-    --bg: #f5f2ed;
+    --bg: #edeff5;
     --surface: #ffffff;
-    --accent: #c0392b;
-    --accent2: #e8d5b0;
-    --text: #1a1a1a;
+    --accent: #262c3a;
+    --accent2: #bbc0cfc2;
+    --text: #333059;
     --muted: #888;
     --border: #e0dbd3;
     --radius: 8px;
@@ -202,13 +202,14 @@ nav {
 }
 
 .hero {
-    background: linear-gradient(135deg, #2c1a0e 0%, var(--accent) 100%);
+    background: linear-gradient(135deg, #8774a5 0%, var(--accent) 100%);
     color: #fff;
     padding: 80px 24px;
     text-align: center;
 }
 
 .hero h1 {
+    font-family: Great Vibes;
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -464,3 +465,6 @@ footer {
     transform: translateY(0px);
 }
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+</style>
