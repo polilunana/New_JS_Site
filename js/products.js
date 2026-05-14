@@ -20,7 +20,7 @@ var products = [
         name: "Heavy Oversize Hoodie",
         category: "Худі та світшоти",
         price: 1699,
-        emoji: "🧥",
+        emoji: "🥼",
         desc: "Тепле oversize худі з щільної тканини та м’яким внутрішнім шаром для максимального комфорту"
     },
     {
@@ -28,7 +28,7 @@ var products = [
         name: "Minimal Black Shirt",
         category: "Сорочки",
         price: 1099,
-        emoji: "👔",
+        emoji: "🧥",
         desc: "Мінімалістична чорна сорочка прямого крою для casual та streetwear образів"
     },
     {
@@ -49,19 +49,19 @@ var products = [
     },
     {
         id: 7,
-        name: "Shadow Oversize Longsleeve",
-        category: "Oversize Collection",
+        name: "Oversize Longsleeve",
+        category: "Лонгсліви",
         price: 899,
-        emoji: "🧦",
+        emoji: "👘",
         desc: "Стильний oversize лонгслів із м’якої бавовни для повсякденного minimal look"
     },
     {
         id: 8,
-        name: "Washed Zip Hoodie",
-        category: "Streetwear Collection",
-        price: 1899,
+        name: "UrbanKick",
+        category: "Взуття",
+        price: 2499,
         emoji: "👟",
-        desc: "Oversize худі на блискавці з washed ефектом у сучасному streetwear стилі"
+        desc: "Легкі та стильні кросівки для щоденного комфорту"
     },
 ]
 
