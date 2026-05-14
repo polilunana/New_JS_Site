@@ -1,11 +1,11 @@
 :root {
-    --bg: #edeff5;
+    --bg: #f1edf5;
     --surface: #ffffff;
-    --accent: #262c3a;
-    --accent2: #bbc0cfc2;
-    --text: #333059;
+    --accent: #3b285a;
+    --accent2: #c5bbcfc2;
+    --text: #62429e;
     --muted: #888;
-    --border: #e0dbd3;
+    --border: #b89dd4;
     --radius: 8px;
     --shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
@@ -202,7 +202,9 @@ nav {
 }
 
 .hero {
-    background: linear-gradient(135deg, #8774a5 0%, var(--accent) 100%);
+    background-image: url(https://capayvalleylavender.com/cdn/shop/files/banner.jpg?v=1696431650&width=3840);
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
     padding: 80px 24px;
     text-align: center;
@@ -292,7 +294,8 @@ footer {
 }
 
 .about-section h2 {
-    font-size: 32px;
+    font-family: Good Vibes;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
@@ -335,6 +338,7 @@ footer {
 }
 
 .cart-empty {
+    font-family: Good Vibes;
     text-align: center;
     padding: 80px 0;
     color: var(--muted);
@@ -408,6 +412,7 @@ footer {
 }
 
 .cart-item-name {
+    font-family: Good Vibes;
     font-weight: bold;
     font-size: 15px;
 }
@@ -425,6 +430,7 @@ footer {
 }
 
 .cart-item-total {
+    font-family: Good Vibes;
     font-size: 18px;
     color: var(--accent);
     min-width: 72px;
@@ -464,7 +470,3 @@ footer {
     opacity: 1;
     transform: translateY(0px);
 }
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-</style>

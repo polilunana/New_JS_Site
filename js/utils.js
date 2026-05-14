@@ -7,6 +7,7 @@ function createProductCard(p) {
         '<div class="product-info">' +
             '<div class="product-name">' + p.name + "</div>" +
             '<div class="product-category">' + p.category + "</div>" +
+            '<div class="product-category">' + p.desc + "</div>" +
             '<div class="product-footer">' +
                 '<div class="product-price">' + p.price + "</div>" +
                 '<button class="btn-add">' + "Кошик" + "</button>" +
